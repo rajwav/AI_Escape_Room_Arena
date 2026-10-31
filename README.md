@@ -1,5 +1,15 @@
 # 🎮 AI GAME ARENA: Multi-Game Intelligent Reasoning & Search Platform
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bm-ai-escape-room-arena.streamlit.app/)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Tests Passing](https://img.shields.io/badge/tests-45%2F45%20passing-brightgreen.svg)](Source_Code/tests/test_all.py)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+> 🚀 **LIVE DEPLOYMENT**: Experience the live playable arena directly in your browser:  
+> 👉 **[https://bm-ai-escape-room-arena.streamlit.app/](https://bm-ai-escape-room-arena.streamlit.app/)**
+
+---
+
 > **NVIDIA Innovative Assignment — Subject: Artificial Intelligence & Machine Learning (AIML)**  
 > **Project Title**: AI Escape Room & Multi-Game AI Reasoning Arena  
 > **Core Concepts**: Knowledge Representation (Horn Clauses), Forward Chaining Inference, State-Space Search (BFS vs A*), Minimax Adversarial Search, Constraint Satisfaction (CSP Backtracking with MRV), Unsupervised Telemetry Clustering (K-Means $K=3$), Supervised Dynamic Difficulty Adjustment (Decision Tree Classifier), and Universal Deterministic Scoring.
@@ -81,7 +91,7 @@ Project_2_AI_Escape_Room/
 │   │   ├── adaptive_difficulty.py      # Telemetry, K-Means, Decision Tree DDA
 │   │   ├── ml_evaluator.py             # Metrics Evaluator & 120-Player Experiment
 │   │   └── visualizer.py               # ASCII Proof Trees & Benchmark Tables
-│   ├── tests/                          # 35 Automated Unit Tests (100% Passing)
+│   ├── tests/                          # 45 Automated Unit Tests (100% Passing)
 │   │   ├── test_inference.py
 │   │   ├── test_search.py
 │   │   ├── test_csp.py
@@ -104,7 +114,13 @@ Project_2_AI_Escape_Room/
 
 ## 🚀 Quickstart & Execution Guide
 
-### 1. Run Automated Test Suite (35/35 Tests Passing)
+### 🌐 Live Cloud Deployment (No Setup Needed!)
+Play directly on Streamlit Community Cloud:
+👉 **[https://bm-ai-escape-room-arena.streamlit.app/](https://bm-ai-escape-room-arena.streamlit.app/)**
+
+---
+
+### 1. Run Automated Test Suite (45/45 Tests Passing)
 ```bash
 python3 Source_Code/tests/test_all.py
 ```
