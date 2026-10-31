@@ -1,0 +1,10 @@
+{
+  "classes": [
+    "Assist",
+    "Challenge",
+    "Standard"
+  ],
+  "max_depth": 4,
+  "test_accuracy": 1.0,
+  "macro_f1": 1.0
+}

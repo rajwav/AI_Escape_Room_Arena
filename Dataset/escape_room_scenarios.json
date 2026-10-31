@@ -1,0 +1,29 @@
+{
+  "project": "AI Escape Room",
+  "scenarios": [
+    {
+      "id": "scenario_standard",
+      "name": "The Alchemist's Facility",
+      "description": "Standard facility layout with 5 connected chambers and 2 constraint puzzles.",
+      "start_room": "Foyer",
+      "goal_room": "Escape_Portal",
+      "optimal_actions": 11,
+      "puzzles": [
+        "Vault 3-Digit Combination CSP",
+        "Chemical Synthesis Volume CSP"
+      ]
+    },
+    {
+      "id": "scenario_challenge",
+      "name": "The Timed Containment Breach",
+      "description": "Expert mode with masked visual cues and strict action limits.",
+      "start_room": "Foyer",
+      "goal_room": "Escape_Portal",
+      "optimal_actions": 11,
+      "puzzles": [
+        "Vault 3-Digit Combination CSP with strict parity constraints",
+        "Dual-Flask Chemical Equilibrium"
+      ]
+    }
+  ]
+}

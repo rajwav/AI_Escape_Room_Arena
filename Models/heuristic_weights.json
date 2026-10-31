@@ -1,0 +1,14 @@
+{
+  "heuristic_name": "Admissible Subgoal Milestone Heuristic",
+  "formula": "h(s) = manhattan_distance(s.room, 'Escape_Portal') + missing_milestones(s)",
+  "weights": {
+    "manhattan_weight": 1.0,
+    "missing_portal_activation": 1.0,
+    "missing_safe_opened": 1.0,
+    "missing_vault_unlocked": 1.0,
+    "missing_acid_synthesis": 1.0
+  },
+  "is_admissible": true,
+  "is_consistent": true,
+  "theoretical_guarantee": "Guarantees optimal minimal step solution in A* search."
+}

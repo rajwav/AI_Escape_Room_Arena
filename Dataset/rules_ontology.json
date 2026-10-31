@@ -1,0 +1,47 @@
+{
+  "ontology_name": "Escape Room First-Order Logic Rules",
+  "version": "1.0.0",
+  "predicates": [
+    "at(Room)",
+    "has(Item)",
+    "examined(Object)",
+    "revealed(Clue)",
+    "known(Code)",
+    "synthesized(Compound)",
+    "safe_opened",
+    "vault_unlocked",
+    "portal_activated"
+  ],
+  "rules": [
+    {
+      "id": "R1_Reveal_Cipher_Formula",
+      "formula": "has(uv_torch) ∧ examined(ancient_manuscript) ⟹ revealed(cipher_formula)",
+      "explanation": "Illuminating manuscript with UV torch reveals invisible ink cipher."
+    },
+    {
+      "id": "R2_Decode_Vault_Code",
+      "formula": "revealed(cipher_formula) ∧ examined(lab_notebook) ⟹ known(vault_code_375)",
+      "explanation": "Cross-referencing formula with notebook derives vault digits: 3-5-7."
+    },
+    {
+      "id": "R3_Cabinet_Accessible",
+      "formula": "has(brass_key) ∧ at(Library) ⟹ cabinet_unlocked",
+      "explanation": "Brass key unlocks Library cabinet containing UV torch."
+    },
+    {
+      "id": "R4_Acid_Synthesized",
+      "formula": "has(reagent_a) ∧ has(reagent_b) ∧ at(Laboratory) ⟹ synthesized(corrosion_acid)",
+      "explanation": "Balancing chemical reagents synthesizes corrosion acid."
+    },
+    {
+      "id": "R5_Safe_Melted",
+      "formula": "has(corrosion_acid) ∧ at(Secret_Vault) ⟹ safe_opened",
+      "explanation": "Acid dissolves heavy safe hinges, exposing Master Crystal."
+    },
+    {
+      "id": "R6_Portal_Ready",
+      "formula": "has(master_crystal) ∧ at(Escape_Portal) ⟹ portal_activated",
+      "explanation": "Inserting Master Crystal into portal activates escape sequence."
+    }
+  ]
+}

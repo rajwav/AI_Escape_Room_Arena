@@ -1,0 +1,58 @@
+{
+  "project": "AI Escape Room",
+  "dataset_name": "Player Gameplay Telemetry Dataset",
+  "description": "Synthetic telemetry dataset modeling player interactions across novice, intermediate, and expert cohorts.",
+  "num_records": 300,
+  "features": [
+    {
+      "name": "player_id",
+      "type": "string",
+      "description": "Unique identifier for player session (e.g. P_0001)"
+    },
+    {
+      "name": "time_per_room",
+      "type": "float",
+      "unit": "seconds",
+      "description": "Average duration spent in each unique room before transitioning."
+    },
+    {
+      "name": "hint_requests",
+      "type": "integer",
+      "description": "Total number of explicit deductive hints requested during the escape run."
+    },
+    {
+      "name": "invalid_actions",
+      "type": "integer",
+      "description": "Number of invalid actions, unachievable moves, or incorrect puzzle guesses."
+    },
+    {
+      "name": "backtrack_rate",
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Ratio of re-visited rooms to total room transitions."
+    },
+    {
+      "name": "search_efficiency",
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Theoretical optimal steps divided by actual actions taken (11 / Actions)."
+    },
+    {
+      "name": "csp_attempts",
+      "type": "integer",
+      "description": "Number of attempts required to solve combinatorial cipher locks."
+    },
+    {
+      "name": "skill_cluster",
+      "type": "string",
+      "enum": ["Novice", "Intermediate", "Expert"],
+      "description": "Ground-truth archetype cluster label."
+    },
+    {
+      "name": "recommended_difficulty",
+      "type": "string",
+      "enum": ["Assist", "Standard", "Challenge"],
+      "description": "Target dynamic adaptation action."
+    }
+  ]
+}
