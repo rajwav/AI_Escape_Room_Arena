@@ -1,6 +1,4 @@
-# AI Escape Room Dependencies
-# The core engine runs on pure standard Python 3.9+ with zero mandatory external dependencies.
-# Streamlit is optional for web UI visualization.
-
 streamlit>=1.25.0
 pytest>=7.0.0
+matplotlib>=3.5.0
+python-docx>=0.8.11
